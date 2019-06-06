@@ -1,11 +1,43 @@
-.btn {
-  border: 0px solid rgba(41, 107, 63, 0.466);
-  text-align: center;
-  background-color: rgba(41, 107, 63, 0.466);
-  padding: 1.5rem 0 1.5rem 0;
-  border-radius: 12px;
-  font-size: 2rem;
-  color: white;
+@media (max-width: 500px) {
+  .navigation {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .navbar {
+    margin-top: 3rem;
+  }
+  .funMiddle {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+    padding: 0px 10px 0px 10px;
+  }
+  .content-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 110%;
+  }
+  .content-pick {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 500px;
+    border: 1px solid black;
+  }
+}
+.destination {
+  background-color: red;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -216,6 +248,12 @@ img {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+    padding-right: 1%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
@@ -239,6 +277,11 @@ img {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -251,4 +294,13 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  border: 0px solid rgba(41, 107, 63, 0.466);
+  text-align: center;
+  background-color: rgba(41, 107, 63, 0.466);
+  padding: 1.5rem 0 1.5rem 0;
+  border-radius: 12px;
+  font-size: 2rem;
+  color: white;
 }
