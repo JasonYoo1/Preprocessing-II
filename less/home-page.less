@@ -31,7 +31,12 @@
       img {
         border-radius: 10px;
       }
+      @media @mobile{
+        width: 100%;
+        margin-bottom: 1rem;
+      }
     }
+
 
     
   }
@@ -56,12 +61,17 @@
     margin: 0 auto 30px;
     @media @mobile{
       width: 100%;
-      // margin: auto;
     }
     img {
       border-radius: 10px;
     }
   }
+
+  // @media @mobile{
+  //   img{
+  //     width: 100%;
+  //   }
+  // }
 
   .content-pick {
     padding-top: 30px;
@@ -72,6 +82,9 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile{
+        width: 90%;
+      }
       .btn{
         border: 0px solid rgba(41, 107, 63, 0.466);
         text-align: center;
@@ -85,3 +98,11 @@
     }
   }
 }// home
+
+@media @mobile{
+  .inverse-content{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
